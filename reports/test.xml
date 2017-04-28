@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="test"
+    errors="1" failures="0" hostname="" id="" package="test" skipped="0"
+    tests="1" time="0.006000" timestamp="Fri, 28 Apr 2017 03:33:41 GMT">
+  
+    <testcase name="Guinea Pig Assert Title" classname="test" time="0.006000" assertions="0">
+    </testcase>
+      <system-err>
+          Error while running [Test / Guinea Pig Assert Title]:
+
+  ReferenceError: comments is not defined
+    at Object.Guinea Pig Assert Title (/home/btakuski/NightwatchProject/test/e2e/test.js:8:32)
+    at Module.call (/home/btakuski/NightwatchProject/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /home/btakuski/NightwatchProject/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/home/btakuski/NightwatchProject/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/home/btakuski/NightwatchProject/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/home/btakuski/NightwatchProject/node_modules/q/q.js:796:13)
+    at /home/btakuski/NightwatchProject/node_modules/q/q.js:556:49
+    at runSingle (/home/btakuski/NightwatchProject/node_modules/q/q.js:137:13)
+    at flush (/home/btakuski/NightwatchProject/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>

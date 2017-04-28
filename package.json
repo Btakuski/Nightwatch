@@ -1,0 +1,16 @@
+{
+  "name": "testproj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e": "node_modules/.bin/nightwatch --config nightwatch.conf.BASIC.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nightwatch": "^0.9.14",
+    "selenium-download": "^2.0.10"
+  }
+}
