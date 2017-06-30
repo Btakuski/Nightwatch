@@ -38,7 +38,6 @@ module.exports = {
 		var order = browser.page.order();
 
         browser
-            .useXpath()
             .verifyPage(order.text.url, order.selectors.pagebody, order.text.title)
             .fillTextField(order.selectors.firstname, order.text.fname)
             .fillTextField(order.selectors.lastname, order.text.lname)
@@ -51,6 +50,7 @@ module.exports = {
             .fillTextField(order.selectors.cvvcode, order.text.cvvcode)
             .fillTextField(order.selectors.city, order.text.city)
             .fillTextField(order.selectors.zipcode, order.text.zipcode)
+            .useCss().assert.containsText('#edit-firstname', order.text.fname)
 	        .clickElement(order.selectors.placeorder)
 		    .end();
 	},
